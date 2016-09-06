@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Frontpage</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script type="text/javascript" src="menu.js"></script>
+</head>
+<body>
+  <!-- search bar -->
+  <div id="searchbar">
+    <div class="searchbar">
+      <form id="searchbar-form" action="/s">
+
+          <label class="searchbar__location">
+            <span>
+              地點
+            </span>
+            <select
+              id="location"
+              name="location"
+              required>
+                <option value="" disabled selected hidden>請選擇地區</option>
+                <option value="all" value="all">全部</option>
+                <option value="taipei" name="taipei">大台北地區</option>
+                <option value="taoYuan" name="taoYuan">桃園</option>
+                <option value="hsinChu" name="hsinChu">新竹</option>
+                <option value="miaoLi" name="miaoLi">苗栗</option>
+                <option value="taiChung" name="taiChung">台中</option>
+                <option value="changHua" name="changHua">彰化</option>
+                <option value="nanTou" name="nanTou">南投</option>
+                <option value="yunLin" name="yunLin">雲林</option>
+                <option value="chiaYi" name="chiaYi">嘉義</option>
+                <option value="taiNan" name="taiNan">台南</option>
+                <option value="kaoHsiung" name="kaoHsiung">高雄</option>
+                <option value="yiLan" name="yiLan">宜蘭</option>
+                <option value="huaLian" name="huaLian">花蓮</option>
+                <option value="taiTung" name="taiTung">台東</option>
+            </select>
+          </label>
+
+          <label class="searchbar__date">
+            <span>
+              預約日期
+            </span>
+            <input
+              id="searchDate"
+              type="date"
+              name="searchDate"
+              placeholder="請選擇日期" />
+          </label>
+
+         <label class="searchbar__time">
+            <span>
+              時間
+            </span>
+            <input
+              id="searchTime"
+              type="time"
+              name="searchTime"
+              placeholder="請選擇時間" />
+          </label>
+
+          <label class="searchbar__type">
+            <span>
+              搜尋類型
+            </span>
+              <select id="searchbarType" name="searchbarType">
+                <option value="nailPolishShop">美甲店</option>
+                <option value="nailSpecialist">美甲師</option>
+              </select>
+          </label>
+
+        <button
+          id="submit_location"
+          type="submit"
+          class="searchbar__submit btn btn-primary btn-large">
+          搜索
+        </button>
+
+        <input type="hidden" name="source" value="bb">
+
+      </form>
+    </div>
+  </div>
+
+  <!-- menu -->
+  <div id="cc_menu" class="cc_menu">
+  	<div class="cc_item" style="z-index:5;">
+  		<img src="images/1.jpg" alt="image" />
+  		<span class="cc_title">Collection</span>
+  		<div class="cc_submenu">
+  			<ul>
+  				<li class="cc_content_1">Winter 2010</li>
+  				<li class="cc_content_2">Spring 2011</li>
+  			</ul>
+  		</div>
+  	</div>
+  	<div class="cc_item" style="z-index:4;">
+      <img src="images/2.jpg" alt="image" />
+  		<span class="cc_title">Stores</span>
+  		<div class="cc_submenu">
+  			<ul>
+  				<li class="cc_content_3">Milano</li>
+  				<li class="cc_content_4">Paris</li>
+  			</ul>
+  		</div>
+  	</div>
+  	...
+  	<div id="cc_content" class="cc_content">
+  		<span id="cc_back" class="cc_back"><< Go back</span>
+  		<div class="cc_content_1">
+  			<h1>Winter 2010</h1>
+  			<p>Some content</p>
+  		</div>
+  		<div class="cc_content_2">
+  			<h1>Spring 2011</h1>
+  			<p>Some content</p>
+  		</div>
+  		...
+  	</div>
+  </div>
+</body>
+</html>
